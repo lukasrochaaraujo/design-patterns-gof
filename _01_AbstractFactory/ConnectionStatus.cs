@@ -1,4 +1,4 @@
-namespace DesignPatterns.AbstractFactory;
+namespace DesignPatterns._01_AbstractFactory;
 
 public enum ConnectionStatus
 {
