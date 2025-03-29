@@ -1,5 +1,8 @@
 namespace DesignPatterns._06_Adapter;
 
+/// <summary>
+/// Adapter
+/// </summary>
 public class FooPaymentGatewayAdapter : IPaymentGateway
 {
     private readonly FooPaymentService fooPaymentService;

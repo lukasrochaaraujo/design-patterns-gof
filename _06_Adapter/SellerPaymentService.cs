@@ -1,5 +1,8 @@
 namespace DesignPatterns._06_Adapter;
 
+/// <summary>
+/// Client
+/// </summary>
 public class SellerPaymentService
 {
     private IPaymentGateway _gateway;
