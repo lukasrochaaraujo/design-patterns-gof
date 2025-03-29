@@ -1,5 +1,8 @@
 namespace DesignPatterns._07_Bridge;
 
+/// <summary>
+/// RefinedAbstraction
+/// </summary>
 public class CurrentAccount : Account
 {
     public CurrentAccount(ITransfer transfer) 

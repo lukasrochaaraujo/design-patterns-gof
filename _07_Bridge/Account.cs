@@ -1,5 +1,8 @@
 namespace DesignPatterns._07_Bridge;
 
+/// <summary>
+/// Abstraction
+/// </summary>
 public abstract class Account
 {
     protected ITransfer _transfer;
