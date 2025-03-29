@@ -1,5 +1,8 @@
 namespace DesignPatterns._03_FactoryMethod;
 
+/// <summary>
+/// ConcreteCreator
+/// </summary>
 public static class ParametrizedNotificationServiceFactory
 {
     public static INotificationService Create(NotificationType type)

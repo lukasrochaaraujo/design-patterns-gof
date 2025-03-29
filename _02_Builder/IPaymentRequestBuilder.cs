@@ -1,5 +1,8 @@
 namespace DesignPatterns._02_Builder;
 
+/// <summary>
+/// Builder
+/// </summary>
 public interface IPaymentRequestBuilder
 {
     IPaymentRequestBuilder WithAmount(decimal amount);

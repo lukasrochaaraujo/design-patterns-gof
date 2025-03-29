@@ -1,5 +1,8 @@
 namespace DesignPatterns._04_Prototype;
 
+/// <summary>
+/// ConcretePrototype
+/// </summary>
 public class SaleProposal : IProposal
 {
     //Other complex properties
@@ -25,6 +28,8 @@ public class SaleProposal : IProposal
     public decimal Amount() => _totalAmount;
 
     public ProposalStatus Status() => _status;
+
+    public void Delete() => _status = ProposalStatus.Deleted;
 
     public void Cancel() => _status = ProposalStatus.Canceled;
 

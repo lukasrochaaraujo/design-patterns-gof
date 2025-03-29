@@ -1,5 +1,8 @@
 namespace DesignPatterns._01_AbstractFactory;
 
+/// <summary>
+/// Product1
+/// </summary>
 public class MongoConnection : IConnection
 {
     private readonly string _connectionString;

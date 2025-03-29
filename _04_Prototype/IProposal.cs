@@ -7,6 +7,7 @@ public interface IProposal : IProposalPrototype
     void SetAmount(decimal amount);
     decimal Amount();
     ProposalStatus Status();
+    void Delete();
     void Cancel();
     bool Canceled();
 }

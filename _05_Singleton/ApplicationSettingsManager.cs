@@ -1,5 +1,8 @@
 namespace DesignPatterns._05_Singleton;
 
+/// <summary>
+/// Singleton
+/// </summary>
 public sealed class ApplicationSettingsManager
 {
     private static ApplicationSettings? settings;

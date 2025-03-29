@@ -1,4 +1,5 @@
-﻿using DesignPatterns._04_Prototype;
+﻿using System.Drawing;
+using DesignPatterns._04_Prototype;
 using DesignPatterns._05_Singleton;
 using DesignPatterns._06_Adapter;
 using DesignPatterns._07_Bridge;
@@ -13,14 +14,10 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 //*****************
 //* _04_Prototype *
 //*****************
-// var proposal = new SaleProposal(48, 20_000);
-// //for some reason the proposal was canceled
-// proposal.Cancel();
-// //new one will be created
-// var newProposal = proposal.Clone();
-// newProposal.SetAmount(15_000);
-
-// Console.WriteLine($"CANCELED..: {proposal.Id()} : Status {proposal.Status()} : R$ {proposal.Amount()} : Months {proposal.DurationMonths()}");
+// var proposalService = new ProposalService();
+// var proposal = new SaleProposal(48, 5000);
+// var newProposal = proposalService.Copy(proposal);
+// Console.WriteLine($"DELETED...: {proposal.Id()} : Status {proposal.Status()} : R$ {proposal.Amount()} : Months {proposal.DurationMonths()}");
 // Console.WriteLine($"NEW COPIED: {newProposal.Id()} : Status {newProposal.Status()} : R$ {newProposal.Amount()} : Months {newProposal.DurationMonths()}");
 
 //*****************

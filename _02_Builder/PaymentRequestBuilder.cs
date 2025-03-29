@@ -1,5 +1,8 @@
 namespace DesignPatterns._02_Builder;
 
+/// <summary>
+/// ConcreteBuilder
+/// </summary>
 public class PaymentRequestBuilder : IPaymentRequestBuilder
 {
     private decimal _amount;

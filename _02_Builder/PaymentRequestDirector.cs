@@ -1,5 +1,8 @@
 namespace DesignPatterns._02_Builder;
 
+/// <summary>
+/// Director
+/// </summary>
 public abstract class PaymentRequestDirector
 {
     public static IPaymentRequest BuildFooStandardSubscription(PaymentRequestBuilder builder)

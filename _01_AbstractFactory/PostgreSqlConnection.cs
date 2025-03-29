@@ -1,5 +1,8 @@
 namespace DesignPatterns._01_AbstractFactory;
 
+/// <summary>
+/// Product2
+/// </summary>
 public class PostgreSqlConnection : IConnection
 {
     private readonly string _connectionString;
