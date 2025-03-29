@@ -1,4 +1,5 @@
 ﻿using DesignPatterns._04_Prototype;
+using DesignPatterns._05_Singleton;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 
@@ -21,3 +22,12 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 
 // Console.WriteLine($"CANCELED..: {proposal.Id()} : Status {proposal.Status()} : R$ {proposal.Amount()} : Months {proposal.DurationMonths()}");
 // Console.WriteLine($"NEW COPIED: {newProposal.Id()} : Status {newProposal.Status()} : R$ {newProposal.Amount()} : Months {newProposal.DurationMonths()}");
+
+//*****************
+//* _05_Singleton *
+//*****************
+// var counter = Enumerable.Range(0, 10);
+// foreach (var count in counter)
+// {
+//     Console.WriteLine($"App version: {ApplicationSettingsManager.Instance().Version}");
+// }
