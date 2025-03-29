@@ -1,18 +1,17 @@
 ﻿using DesignPatterns._04_Prototype;
 using DesignPatterns._05_Singleton;
+using DesignPatterns._06_Adapter;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 
 //*********************
 //* _03_FactoryMethod *
 //*********************
-
 //new DesignPatterns._03_FactoryMethod.SomeStuffService().NotifyUser();
 
 //*****************
 //* _04_Prototype *
 //*****************
-
 // var proposal = new SaleProposal(48, 20_000);
 // //for some reason the proposal was canceled
 // proposal.Cancel();
@@ -31,3 +30,19 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 // {
 //     Console.WriteLine($"App version: {ApplicationSettingsManager.Instance().Version}");
 // }
+
+//***************
+//* _06_Adapter *
+//***************
+// //adaptee
+// //SellerPaymentService can't use the FooPaymentService interface
+// var fooPaymentService = new FooPaymentService();
+
+// //adapter
+// //FooPaymentGatewayAdapter encapsulates FooPaymentService with compatible interface
+// var fooPaymentGatewayAdapter = new FooPaymentGatewayAdapter(fooPaymentService);
+
+// //client
+// //Now SellerPaymentService can use FooPaymentService with the adapter
+// var sellerPaymentService = new SellerPaymentService(fooPaymentGatewayAdapter);
+// sellerPaymentService.Transfer(new Payment());
