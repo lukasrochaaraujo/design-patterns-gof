@@ -1,6 +1,7 @@
 ﻿using DesignPatterns._04_Prototype;
 using DesignPatterns._05_Singleton;
 using DesignPatterns._06_Adapter;
+using DesignPatterns._07_Bridge;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 
@@ -46,3 +47,11 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 // //Now SellerPaymentService can use FooPaymentService with the adapter
 // var sellerPaymentService = new SellerPaymentService(fooPaymentGatewayAdapter);
 // sellerPaymentService.Transfer(new Payment());
+
+//**************
+//* _06_Bridge *
+//**************
+// var currentAccount = new CurrentAccount(new Pix());
+// currentAccount.Transfer(100);
+// currentAccount = new CurrentAccount(new Ted());
+// currentAccount.Transfer(200);
