@@ -4,8 +4,9 @@ using DesignPatterns._05_Singleton;
 using DesignPatterns._06_Adapter;
 using DesignPatterns._07_Bridge;
 using DesignPatterns._08_Composite;
+using DesignPatterns._09_Decorator;
 
-Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
+Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
 //*********************
 //* _03_FactoryMethod *
@@ -65,3 +66,13 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 // };
 // var sentence = new Sentence(words);
 // sentence.Print();
+
+//*****************
+//* _09_Decorator *
+//*****************
+// var fileDataSource = new FileDataSource();
+// fileDataSource.Save("plain content");
+// var encryptionDataSource = new EncryptionDataSourceDecorator(
+//     new FileDataSource()
+// );
+// encryptionDataSource.Save("plain content");
