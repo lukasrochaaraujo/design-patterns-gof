@@ -3,6 +3,7 @@ using DesignPatterns._04_Prototype;
 using DesignPatterns._05_Singleton;
 using DesignPatterns._06_Adapter;
 using DesignPatterns._07_Bridge;
+using DesignPatterns._08_Composite;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 
@@ -46,9 +47,21 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!");
 // sellerPaymentService.Transfer(new Payment());
 
 //**************
-//* _06_Bridge *
+//* _07_Bridge *
 //**************
 // var currentAccount = new CurrentAccount(new Pix());
 // currentAccount.Transfer(100);
 // currentAccount = new CurrentAccount(new Ted());
 // currentAccount.Transfer(200);
+
+//*****************
+//* _08_Composite *
+//*****************
+// var words = new List<Word>
+// {
+//     new('I', '\'', 'm'),
+//     new('y', 'o', 'u', 'r'),
+//     new('f', 'a', 't', 'h', 'e', 'r', '!')
+// };
+// var sentence = new Sentence(words);
+// sentence.Print();
