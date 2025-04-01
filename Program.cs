@@ -5,6 +5,7 @@ using DesignPatterns._06_Adapter;
 using DesignPatterns._07_Bridge;
 using DesignPatterns._08_Composite;
 using DesignPatterns._09_Decorator;
+using DesignPatterns._10_Facade;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -76,3 +77,20 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 //     new FileDataSource()
 // );
 // encryptionDataSource.Save("plain content");
+
+//**************
+//* _09_Facade *
+//**************
+// //using all classes to activate the night mode
+// //you need to know that all this activates the night mode :(
+// var light = new Light();
+// var thermostat = new Thermostat();
+// var doorLock = new DoorLock();
+
+// light.TurnOff();
+// thermostat.Temperature(25);
+// doorLock.Lock();
+
+// //using SmartHomeFacade 
+// var smartHome = new SmartHomeFacade();
+// smartHome.ActivateNightMode();
