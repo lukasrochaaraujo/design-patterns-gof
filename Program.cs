@@ -1,4 +1,6 @@
 ﻿using System.Drawing;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using DesignPatterns._04_Prototype;
 using DesignPatterns._05_Singleton;
 using DesignPatterns._06_Adapter;
@@ -6,6 +8,8 @@ using DesignPatterns._07_Bridge;
 using DesignPatterns._08_Composite;
 using DesignPatterns._09_Decorator;
 using DesignPatterns._10_Facade;
+using DesignPatterns._11_Flyweight;
+using DesignPatterns._12_Proxy;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -94,3 +98,15 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // //using SmartHomeFacade 
 // var smartHome = new SmartHomeFacade();
 // smartHome.ActivateNightMode();
+
+//**************
+//* _11_Proxy *
+//**************
+// //initialize an attachment is expensive
+// var fileId = Guid.NewGuid();
+// var attachment = new Attachment(fileId);
+
+// //using proxy
+// var attachmentProxy = new AttachmentLazy(fileId); //no file initialization until you need
+// //some stuff before need to load the file
+// attachmentProxy.GetFile();
