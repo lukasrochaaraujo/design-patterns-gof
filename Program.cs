@@ -10,6 +10,7 @@ using DesignPatterns._09_Decorator;
 using DesignPatterns._10_Facade;
 using DesignPatterns._11_Flyweight;
 using DesignPatterns._12_Proxy;
+using DesignPatterns._13_ChainOfResponsability;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -110,3 +111,14 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // var attachmentProxy = new AttachmentLazy(fileId); //no file initialization until you need
 // //some stuff before need to load the file
 // attachmentProxy.GetFile();
+
+//*****************************
+//* _11_ChainOfResponsability *
+//*****************************
+// var chainOfApprovals = new NoCustomerApprovalHandler();
+// chainOfApprovals
+//     .Next(new MaxDiscountApprovalHandler())
+//     .Next(new SpecialPaymentMethodApprovalHandler());
+
+// var order = new Order();
+// chainOfApprovals.Handle(order);
