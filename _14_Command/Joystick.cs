@@ -34,4 +34,17 @@ public class Joystick
             default: return null;
         }
     }
+
+    public void RemapButtons(
+        ICommand buttonX,
+        ICommand buttonY,
+        ICommand buttonB,
+        ICommand buttonA
+    )
+    {
+        _buttonX = buttonX;
+        _buttonY = buttonY;
+        _buttonB = buttonB;
+        _buttonA = buttonA;
+    }
 }
