@@ -11,6 +11,7 @@ using DesignPatterns._10_Facade;
 using DesignPatterns._11_Flyweight;
 using DesignPatterns._12_Proxy;
 using DesignPatterns._13_ChainOfResponsability;
+using DesignPatterns._14_Command;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -122,3 +123,25 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
 // var order = new Order();
 // chainOfApprovals.Handle(order);
+
+//***************
+//* _12_Command *
+//***************
+// var actor = new GameActor();
+// var joystick = new Joystick(
+//     new FireCommand(),
+//     new ChangeWeaponCommand(),
+//     new CrouchCommand(),
+//     new JumpCommand()
+// );
+// while (true)
+// {
+//     Console.WriteLine("Game started (Press Esc [Exit], A,B,X or Y)!");
+//     var buttonPressed = ButtonMapper.Map(Console.ReadKey());
+
+//     if (buttonPressed == Button.Start) break;
+//     Console.WriteLine();
+
+//     var command = joystick.HandleInput(buttonPressed);
+//     command?.Execute(actor);
+// }

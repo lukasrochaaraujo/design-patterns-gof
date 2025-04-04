@@ -5,7 +5,7 @@ namespace DesignPatterns._13_ChainOfResponsability;
 /// </summary>
 public abstract class AbstractApprovalHandler : IApprovalHandler
 {
-    private IApprovalHandler _next;
+    private IApprovalHandler? _next;
 
     public IApprovalHandler Next(IApprovalHandler handler)
     {
