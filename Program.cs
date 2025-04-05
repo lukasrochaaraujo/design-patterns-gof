@@ -16,6 +16,7 @@ using DesignPatterns._18_Memento;
 using DesignPatterns._19_Observer;
 using DesignPatterns._20_State;
 using DesignPatterns._21_Strategy;
+using DesignPatterns._22_TemplateMethod;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -248,3 +249,9 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // Console.WriteLine($"{employee}, MeetBonus: {bonus}");
 // bonus = employee.CalculateYearEndBonus(new BelowExpectationsStrategy());
 // Console.WriteLine($"{employee}, BelowBonus: {bonus}");
+
+//**********************
+//* _21_TemplateMethod *
+//**********************
+// var salesReport = new SalesReport();
+// salesReport.Generate();
