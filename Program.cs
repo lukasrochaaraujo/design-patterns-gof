@@ -15,6 +15,7 @@ using DesignPatterns._17_Mediator;
 using DesignPatterns._18_Memento;
 using DesignPatterns._19_Observer;
 using DesignPatterns._20_State;
+using DesignPatterns._21_Strategy;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -236,3 +237,14 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // vendingMachine.InsertMoney(5);
 // vendingMachine.InsertMoney(5);
 // vendingMachine.Select("PB001");
+
+//****************
+//* _20_Strategy *
+//****************
+// var employee = new Employee("Atem", 4000);
+// decimal bonus = employee.CalculateYearEndBonus(new ExceedExpectationsStrategy());
+// Console.WriteLine($"{employee}, ExceedBonus: {bonus}");
+// bonus = employee.CalculateYearEndBonus(new MeetExpectationsStrategy());
+// Console.WriteLine($"{employee}, MeetBonus: {bonus}");
+// bonus = employee.CalculateYearEndBonus(new BelowExpectationsStrategy());
+// Console.WriteLine($"{employee}, BelowBonus: {bonus}");
