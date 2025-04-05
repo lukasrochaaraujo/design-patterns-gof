@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using DesignPatterns._04_Prototype;
+﻿using DesignPatterns._04_Prototype;
 using DesignPatterns._05_Singleton;
 using DesignPatterns._06_Adapter;
 using DesignPatterns._07_Bridge;
@@ -14,6 +11,7 @@ using DesignPatterns._13_ChainOfResponsability;
 using DesignPatterns._14_Command;
 using DesignPatterns._15_Interpreter;
 using DesignPatterns._16_Iterator;
+using DesignPatterns._17_Mediator;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -187,3 +185,11 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // }
 // //In C# exists the IEnumerator abstraction
 // //In Java exists the Iterator abstraction
+
+//****************
+//* _17_Mediator *
+//****************
+// var dialogBox = new DialogBox();
+// dialogBox.ClickOnConfirm();
+// dialogBox.InputText();
+// dialogBox.ClickOnConfirm();
