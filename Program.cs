@@ -12,6 +12,7 @@ using DesignPatterns._11_Flyweight;
 using DesignPatterns._12_Proxy;
 using DesignPatterns._13_ChainOfResponsability;
 using DesignPatterns._14_Command;
+using DesignPatterns._15_Interpreter;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -145,3 +146,24 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 //     var command = joystick.HandleInput(buttonPressed);
 //     command?.Execute(actor);
 // }
+
+//*******************
+//* _13_Interpreter *
+//*******************
+// var customer = new Customer(29, 1700);
+// var expressionA = new AndExpression(
+//     new AgeGreaterThan(18),
+//     new MonthlyIncomeGreaterThan(1500)
+// );
+// var expressionB = new AndExpression(
+//     new AgeGreaterThan(65),
+//     new MonthlyIncomeGreaterThan(3000)
+// );
+// var expressionC = new OrExpression(
+//     expressionA,
+//     expressionB
+// );
+// bool result = expressionC.Interpret(customer);
+// Console.WriteLine($"Result of customer evaluation: {(result ? "Approved": "Reproved")}!");
+// // (29 > 18 && 1700 > 1500) || (29 > 65 && 1700 > 3000)
+// //Or(And(AgeGreaterThan(18),MonthlyIncomeGreaterThan(1500));And(AgeGreaterThan(65),MonthlyIncomeGreaterThan(3000)))
