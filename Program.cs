@@ -13,6 +13,7 @@ using DesignPatterns._15_Interpreter;
 using DesignPatterns._16_Iterator;
 using DesignPatterns._17_Mediator;
 using DesignPatterns._18_Memento;
+using DesignPatterns._19_Observer;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -207,3 +208,13 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // editor.Undo();
 // editor.Write("It's amazing!");
 // editor.Print();
+
+//****************
+//* _19_Observer *
+//****************
+// var newsChannel = new NewsNotification();
+// newsChannel.Register(new EmailChannel());
+// newsChannel.Register(new SmsChannel());
+// newsChannel.Register(new WhatsAppChannel());
+// newsChannel.Notify(new Message("Go Horse is now the most used pattern in real world projects!"));
+// newsChannel.Notify(new Message("PHP is dead in 2025?"));
