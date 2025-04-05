@@ -13,6 +13,7 @@ using DesignPatterns._12_Proxy;
 using DesignPatterns._13_ChainOfResponsability;
 using DesignPatterns._14_Command;
 using DesignPatterns._15_Interpreter;
+using DesignPatterns._16_Iterator;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -103,7 +104,7 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // smartHome.ActivateNightMode();
 
 //**************
-//* _11_Proxy *
+//* _12_Proxy *
 //**************
 // //initialize an attachment is expensive
 // var fileId = Guid.NewGuid();
@@ -115,7 +116,7 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // attachmentProxy.GetFile();
 
 //*****************************
-//* _11_ChainOfResponsability *
+//* _13_ChainOfResponsability *
 //*****************************
 // var chainOfApprovals = new NoCustomerApprovalHandler();
 // chainOfApprovals
@@ -126,7 +127,7 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // chainOfApprovals.Handle(order);
 
 //***************
-//* _12_Command *
+//* _14_Command *
 //***************
 // var actor = new GameActor();
 // var joystick = new Joystick(
@@ -148,7 +149,7 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // }
 
 //*******************
-//* _13_Interpreter *
+//* _15_Interpreter *
 //*******************
 // var customer = new Customer(29, 1700);
 // var expressionA = new AndExpression(
@@ -167,3 +168,22 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // Console.WriteLine($"Result of customer evaluation: {(result ? "Approved": "Reproved")}!");
 // // (29 > 18 && 1700 > 1500) || (29 > 65 && 1700 > 3000)
 // //Or(And(AgeGreaterThan(18),MonthlyIncomeGreaterThan(1500));And(AgeGreaterThan(65),MonthlyIncomeGreaterThan(3000)))
+
+//****************
+//* _16_Iterator *
+//****************
+// var box = new Box();
+// box.Put(new Book());
+// box.Put(new Book());
+// box.Put(new Book());
+// box.Put(new Book());
+// box.Put(new Book());
+
+// var iterator = box.Iterator();
+// for (iterator.Start(); !iterator.Done(); iterator.Next())
+// {
+//     var currentBook = iterator.Current();
+//     Console.WriteLine(currentBook.Isbn);
+// }
+// //In C# exists the IEnumerator abstraction
+// //In Java exists the Iterator abstraction
