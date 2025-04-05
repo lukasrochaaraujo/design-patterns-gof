@@ -14,6 +14,7 @@ using DesignPatterns._16_Iterator;
 using DesignPatterns._17_Mediator;
 using DesignPatterns._18_Memento;
 using DesignPatterns._19_Observer;
+using DesignPatterns._20_State;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -218,3 +219,20 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // newsChannel.Register(new WhatsAppChannel());
 // newsChannel.Notify(new Message("Go Horse is now the most used pattern in real world projects!"));
 // newsChannel.Notify(new Message("PHP is dead in 2025?"));
+
+//*************
+//* _20_State *
+//*************
+// var vendingMachine = new VendingMachine(new List<Product>
+// {
+//     new Product("CB001", 10, 2.99m),
+//     new Product("SB001", 10, 2.99m),
+//     new Product("PB001", 1, 5.99m)
+// });
+// vendingMachine.Select("CB001");
+// vendingMachine.InsertMoney(5);
+// vendingMachine.InsertMoney(5);
+// vendingMachine.Select("PB001");
+// vendingMachine.InsertMoney(5);
+// vendingMachine.InsertMoney(5);
+// vendingMachine.Select("PB001");
