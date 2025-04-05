@@ -12,6 +12,7 @@ using DesignPatterns._14_Command;
 using DesignPatterns._15_Interpreter;
 using DesignPatterns._16_Iterator;
 using DesignPatterns._17_Mediator;
+using DesignPatterns._18_Memento;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -193,3 +194,16 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // dialogBox.ClickOnConfirm();
 // dialogBox.InputText();
 // dialogBox.ClickOnConfirm();
+
+//***************
+//* _18_Memento *
+//***************
+// var editor = new TextEditor(new TextWindow());
+// editor.Write("Memento Pattern");
+// editor.Write("Is used so to manage internal editor state without exposes internal details.");
+// editor.Save();
+// editor.Write("It's Azeiming");
+// editor.Print();
+// editor.Undo();
+// editor.Write("It's amazing!");
+// editor.Print();
