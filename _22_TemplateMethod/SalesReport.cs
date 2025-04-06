@@ -1,7 +1,7 @@
 namespace DesignPatterns._22_TemplateMethod;
 
 /// <summary>
-/// AbstractClass
+/// ConcreteClass
 /// </summary>
 public class SalesReport : ReportGenerator
 {

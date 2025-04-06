@@ -17,6 +17,7 @@ using DesignPatterns._19_Observer;
 using DesignPatterns._20_State;
 using DesignPatterns._21_Strategy;
 using DesignPatterns._22_TemplateMethod;
+using DesignPatterns._23_Visitor;
 
 Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 
@@ -240,7 +241,7 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // vendingMachine.Select("PB001");
 
 //****************
-//* _20_Strategy *
+//* _21_Strategy *
 //****************
 // var employee = new Employee("Atem", 4000);
 // decimal bonus = employee.CalculateYearEndBonus(new ExceedExpectationsStrategy());
@@ -251,7 +252,19 @@ Console.WriteLine("Hello, everyone! Welcome to the Meetup!\n");
 // Console.WriteLine($"{employee}, BelowBonus: {bonus}");
 
 //**********************
-//* _21_TemplateMethod *
+//* _22_TemplateMethod *
 //**********************
 // var salesReport = new SalesReport();
 // salesReport.Generate();
+
+//***************
+//* _23_Visitor *
+//***************
+// var icmsCalculator = new IcmsCalculator();
+// var products = new List<DesignPatterns._23_Visitor.Product>
+// {
+//     new Service(),
+//     new IndustrialProduct()
+// };
+// foreach (var product in products)
+//     product.Accept(icmsCalculator);
